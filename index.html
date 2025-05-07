@@ -7,16 +7,53 @@
     <link href="style.css" rel="stylesheet" />
 </head>
 <body>
+    <!-- Calculator Labels -->
     <div class="heading">
         <h1 class="casio">CASIO</h1>
         <h2 class="classwiz">CLASSWIZ</h2>
     </div>
-    <div class="screen">
-        <div class="display">
-            <p class="output">0</p>
+
+    
+    <div class="calculator">
+        <!-- Contents -->
+        <div class="contents">
+            <!-- Display -->
+            <div class="display">
+                <p class="output">0</p>
+            </div>
+            <!-- Buttons Grid -->
+            <div class="buttons">
+                <button class="cal-button" id="seven">7</button>
+                <button class="cal-button" id="eight">8</button>
+                <button class="cal-button" id="nine">9</button>
+                <button class="cal-button" id="left-bracket">(</button>
+                <button class="cal-button" id="right-bracket">)</button>
+                <button class="cal-button" id="ac">AC</button>
+                <button class="cal-button" id="four">4</button>
+                <button class="cal-button" id="five">5</button>
+                <button class="cal-button" id="six">6</button>
+                <button class="cal-button" id="multiply">x</button>
+                <button class="cal-button" id="divide">/</button>
+                <button class="cal-button" id="power">^</button>
+                <button class="cal-button" id="one">1</button>
+                <button class="cal-button" id="two">2</button>
+                <button class="cal-button" id="three">3</button>
+                <button class="cal-button" id="add">+</button>
+                <button class="cal-button" id="subtract">-</button>
+                <button class="cal-button" id="sqrt">√</button>
+                <button class="cal-button" id="zero">0</button>
+                <button class="cal-button" id="dot">.</button>
+                <button class="cal-button" id="triplezero">000</button>
+                <button class="cal-button" id="ans">ANS</button>
+                <button class="cal-button" id="delete">DEL</button>
+                <button class="cal-button" id="equal">=</button>
+            </div>
         </div>
     </div>
+
+    <!-- Scripts and Libraries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.11.2/math.min.js"></script>
     <script src="script.js"></script>
+
 </body>
 </html>
