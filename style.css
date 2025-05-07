@@ -1,0 +1,49 @@
+/* Color Palette */
+:root {
+    --main-color: white;
+    --wiz-color: pink;
+    --background-color: dimgrey;
+    --screen-color: lightgreen;
+  }
+
+  * {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+body {
+    background-color:var(--background-color);
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 50px;
+}
+
+.casio {
+    color: var(--main-color);
+}
+
+.classwiz {
+    color: var(--wiz-color);
+}
+
+.screen {
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+    width: 100%;
+}
+
+.display {
+    background-color: var(--screen-color);
+    width: 1000px;
+    height: 50px;
+}
+
+.output {
+    font-size: 48px;
+    margin-top: -1px;
+    margin-left: 10px;
+}
