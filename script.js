@@ -1,2 +1,7 @@
-const result = math.evaluate("2 + 3 * (4 - 1)");
-alert(result); // Output: 11
+alert("Hello world")
+let myInput = "";
+myInput += "2";
+myInput += "*";
+myInput += "5";
+const result = math.evaluate(myInput);
+alert(result);
