@@ -80,7 +80,7 @@ document.querySelector("#divide").addEventListener("click", function () {
 
 document.querySelector("#power").addEventListener("click", function () {
   outputContent += "^";
-  calculateContent += "**";
+  calculateContent += "^";
   updateDisplay();
 });
 
@@ -138,6 +138,7 @@ document.querySelector("#triplezero").addEventListener("click", function () {
   updateDisplay();
 });
 
+// ts trippin
 document.querySelector("#ans").addEventListener("click", function () {
   // You could store the previous result in a variable like `lastAnswer`
   outputContent += "ANS";
@@ -147,14 +148,20 @@ document.querySelector("#ans").addEventListener("click", function () {
 
 document.querySelector("#delete").addEventListener("click", function () {
   outputContent = outputContent.slice(0, -1);
-  calculateContent = outputContent.slice(0, -1);
+  calculateContent = calculateContent.slice(0, -1);
+  console.log(calculateContent);
+  console.log(outputContent);
   updateDisplay();
 });
 
 document.querySelector("#equal").addEventListener("click", function () {
+    calculateContent = "(" + calculateContent + ")";
+    console.log(calculateContent);
+    console.log(outputContent);
   try {
-    outputContent = math.evaluate(calculateContent, scope); // simple power support
+    outputContent = math.evaluate(calculateContent, scope).toString(); // simple power support
     result = parseInt(outputContent); // Store result for ANS
+    calculateContent = result.toString();
   } catch {
     outputContent = "Syntax Error";
   }
