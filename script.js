@@ -145,10 +145,8 @@ document.querySelector("#ans").addEventListener("click", function () {
 document.querySelector("#delete").addEventListener("click", function () {
     outputContent = outputContent.slice(0, -1);
     calculateContent = calculateContent.slice(0, -1);
-    // 
-    console.log(calculateContent.toString().length);
+    // If the screen is empty then display a 0 instead
     if (calculateContent.toString().length === 0) {
-        calculateContent = "0";
         outputContent = "0";
     }
     updateDisplay();
