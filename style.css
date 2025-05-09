@@ -4,10 +4,12 @@
     --wiz-color: pink;
     --background-color: dimgrey;
     --screen-color: lightgreen;
+    --display-color: black;
   }
 
   * {
     font-family: Arial, Helvetica, sans-serif;
+    color: var(--main-color);
   }
 
 body {
@@ -26,12 +28,16 @@ body {
 }
 
 .casio {
-    color: var(--main-color);
-    font-size: clamp(2rem, 5vw, 4rem);
+    font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.label {
+    font-size: clamp(1rem, 5vw, 1.5rem);
 }
 
 .classwiz {
     color: var(--wiz-color);
+    letter-spacing: clamp(0.5rem, 5vw, 0.75rem);
 }
 
 .calculator {
@@ -63,6 +69,7 @@ body {
 }
 
 .output {
+    color: var(--display-color);
     font-size: clamp(1.5rem, 5vw, 3rem);
     margin-left: 1vw;
     word-wrap: break-word;
@@ -79,7 +86,8 @@ body {
 }
 
 .cal-button {
-    font-size: clamp(1.25rem, 4vw, 2.5rem);
+    color: var(--display-color);
+    font-size: clamp(1.2rem, 4vw, 1.8rem);
     padding: 1.5vh 0;
     box-sizing: border-box;
     border: 2px solid black;
