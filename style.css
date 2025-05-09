@@ -14,19 +14,20 @@ body {
     background-color:var(--background-color);
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
 }
 
 .heading {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 100px;
-    padding-right: 50px;
+    padding: 2vw 4vw;
 }
 
 .casio {
     color: var(--main-color);
-    font-size: 50px;
+    font-size: clamp(2rem, 5vw, 4rem);
 }
 
 .classwiz {
@@ -36,24 +37,24 @@ body {
 .calculator {
     display: flex;
     justify-content: center;
+    flex-grow: 1;
 }
 
 .contents {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    padding-top: 2%;
-    width: 60%;
+    padding-top: 2vh;
+    width: 90vw;
+    max-width: 700px;
 }
 
 .display {
     background-color: var(--screen-color);
     width: 100%;
-    height: 70px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: black;
+    height: clamp(60px, 8vh, 100px);
+    border: 2px solid black;
     border-radius: 10px;
     display: flex;
     justify-content: flex-start;
@@ -62,39 +63,40 @@ body {
 }
 
 .output {
-    font-size: 48px;
-    margin-left: 10px;
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    margin-left: 1vw;
+    word-wrap: break-word;
+    word-break: break-all;
 }
 
 .buttons {
     width: 100%;
-    padding-top: 10%;
+    margin-top: 5vh;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: 5%;
+    gap: 1vw;
     
 }
 
 .cal-button {
-    font-size: 32px;
-    padding: 15px;
+    font-size: clamp(1.25rem, 4vw, 2.5rem);
+    padding: 1.5vh 0;
     box-sizing: border-box;
-    border-width: 2px;
-    border-style: solid;
-    border-color: black;
+    border: 2px solid black;
     border-radius: 10px;
+    width: 100%;
 }
 
 .trademark {
     position: fixed;
-    bottom: 10px;
-    right: 10px;
+    bottom: 1vh;
+    right: 1vw;
     display: flex;
     justify-content: end;
     align-items: end;
 }
 
 .shuriky {
+    font-size: clamp(0.75rem, 1.5vw, 1rem);
     color: var(--main-color);
-    font-size: 16px;
 }
