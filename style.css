@@ -85,6 +85,7 @@ body {
     
 }
 
+
 .cal-button {
     color: var(--display-color);
     font-size: clamp(1.2rem, 4vw, 1.8rem);
@@ -93,6 +94,16 @@ body {
     border: 2px solid black;
     border-radius: 10px;
     width: 100%;
+}
+
+#ans, #delete {
+    background-color: blue;
+    color: var(--main-color);
+}
+
+#ac {
+    background-color: red;
+    color: var(--main-color);
 }
 
 .trademark {
